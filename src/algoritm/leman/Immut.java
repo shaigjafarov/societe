@@ -2,8 +2,8 @@ package algoritm.leman;
 
 public final class Immut {
 
-
-    private   A a;
+    //todo yeni method elave et
+    private A a;
 
     public Immut(A a) {
         this.a = a;
@@ -11,26 +11,25 @@ public final class Immut {
 
     public A getA() {
         A copyA = new A();
-        copyA.deyer=a.deyer;
+        copyA.deyer = a.deyer;
         return copyA;
     }
 }
 
-class Test{
+class Test {
 
     public static void main(String[] args) {
         Immut immut = new Immut(new A());
-        immut.getA().deyer=5;
+        immut.getA().deyer = 5;
 
         System.out.println(immut.getA().deyer);
-
 
 
     }
 }
 
 
-class A{
+class A {
 
     int deyer;
 }
