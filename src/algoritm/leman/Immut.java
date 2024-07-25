@@ -14,7 +14,7 @@ public final class Immut {
         A copyA = new A();
         copyA.deyer = a.deyer;
         return copyA;
-    }
+    }//aaaaaaa
 }
 
 class Test {
