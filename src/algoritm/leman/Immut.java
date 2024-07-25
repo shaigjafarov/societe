@@ -7,6 +7,7 @@ public final class Immut {
 
     public Immut(A a) {
         this.a = a;
+        //fdffdv
     }
 
     public A getA() {
