@@ -4,8 +4,7 @@ public class Solution {
     public static void main(String[] args) {
 
         int number10 = -133;
-        int number7 = Integer.parseInt(chevirme(number10));
-        System.out.println(number7);
+        System.out.println(chevirme(number10));
     }
 
     public static String chevirme(int number) {
@@ -13,8 +12,8 @@ public class Solution {
         if (number == 0) {
             return "0";
         }
-        boolean menfi;
-        if (menfi = number < 0){
+        boolean isMenfi =number < 0;
+        if (isMenfi){
             number = Math.abs(number);}
 
         while (number > 0) {
@@ -22,7 +21,7 @@ public class Solution {
             number /= 7;
         }
 
-        if (menfi) {
+        if (isMenfi) {
             stringBuilder.append('-');
         }
 
