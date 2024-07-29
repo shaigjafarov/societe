@@ -4,7 +4,7 @@ public class Converttoseven {
 
     int qaliq ;
     String sumofqaliq = "";
-    int num = -7;
+    int num = 1234;
     int temp = num;
 
 
