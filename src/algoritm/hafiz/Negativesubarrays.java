@@ -22,6 +22,7 @@ public class Negativesubarrays {
         int negativeCount = 0;
 
 
+
         for (int i = 0; i < arraylist.size(); i++) {
             for (int j = i; j < arraylist.size(); j++) {
                 int sum=0;
