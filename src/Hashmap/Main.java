@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
 public class Main {
       public static   Map<String, Integer> getCount(String text) {
             String[] words = text.split(" ");
