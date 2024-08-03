@@ -9,7 +9,7 @@ public class Main {
 
 
         Converttoseven converttoseven = new Converttoseven();
-        System.out.println(converttoseven.convert());
+//        System.out.println(converttoseven.convert());
 
 
 //        Binarysearch binarySearch = new Binarysearch();

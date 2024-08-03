@@ -8,7 +8,8 @@ public class Converttoseven {
     int temp = num;
 
 
-    public  String convert() {
+    public  String convert(int num) {
+        temp=num;
         while (temp!=0) {
             qaliq = temp % 7;  // qaln qaliq
             temp = temp /7;    // eded oldu 14
