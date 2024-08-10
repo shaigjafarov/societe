@@ -32,7 +32,7 @@ public class BookUtil {
         list.stream()
                 .map(Book::getName)
                 .sorted()
-                .collect(Collectors.toList())
-                .forEach(book -> System.out.println(book));
+                .toList()
+                .forEach(System.out::println);
     }
 }

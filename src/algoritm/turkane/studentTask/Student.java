@@ -1,17 +1,18 @@
 package algoritm.turkane.studentTask;
 
+import java.util.List;
 import java.util.StringJoiner;
 
 public class Student {
     private String name;
-    private Grade grade;
+    private List<Grade> gradeList;
 
     public Student() {
     }
 
-    public Student(String name, Grade grade) {
+    public Student(String name, List<Grade> gradeList) {
         this.name = name;
-        this.grade = grade;
+        this.gradeList = gradeList;
     }
 
     public String getName() {
@@ -22,19 +23,19 @@ public class Student {
         this.name = name;
     }
 
-    public Grade getGrade() {
-        return grade;
+    public List<Grade> getGradeList() {
+        return gradeList;
     }
 
-    public void setGrade(Grade grade) {
-        this.grade = grade;
+    public void setGradeList(List<Grade> gradeList) {
+        this.gradeList = gradeList;
     }
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Student.class.getSimpleName() + "[", "]")
-                .add("name='" + name + "'")
-                .add("grade=" + grade)
-                .toString();
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", gradeList=" + gradeList +
+                '}';
     }
 }

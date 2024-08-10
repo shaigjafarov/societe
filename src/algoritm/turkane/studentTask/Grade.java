@@ -3,49 +3,40 @@ package algoritm.turkane.studentTask;
 import java.util.StringJoiner;
 
 public class Grade {
-    private int math;
-    private int physics;
-    private int informatics;
+
+    private String lessonName;
+
+    private Integer lessonMark;
 
     public Grade() {
     }
 
-    public Grade(int math, int physics, int informatics) {
-        this.math = math;
-        this.physics = physics;
-        this.informatics = informatics;
+    public Grade(String lessonName, Integer lessonMark) {
+        this.lessonName = lessonName;
+        this.lessonMark = lessonMark;
     }
 
-    public int getMath() {
-        return math;
+    public String getLessonName() {
+        return lessonName;
     }
 
-    public void setMath(int math) {
-        this.math = math;
+    public void setLessonName(String lessonName) {
+        this.lessonName = lessonName;
     }
 
-    public int getPhysics() {
-        return physics;
+    public Integer getLessonMark() {
+        return lessonMark;
     }
 
-    public void setPhysics(int physics) {
-        this.physics = physics;
-    }
-
-    public int getInformatics() {
-        return informatics;
-    }
-
-    public void setInformatics(int informatics) {
-        this.informatics = informatics;
+    public void setLessonMark(Integer lessonMark) {
+        this.lessonMark = lessonMark;
     }
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Grade.class.getSimpleName() + "[", "]")
-                .add("math=" + math)
-                .add("physics=" + physics)
-                .add("informatics=" + informatics)
-                .toString();
+        return "Grade{" +
+                "lessonName='" + lessonName + '\'' +
+                ", lessonMark='" + lessonMark + '\'' +
+                '}';
     }
 }
