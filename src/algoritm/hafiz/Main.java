@@ -25,6 +25,7 @@ public class Main {
 
 
 //        Converttoseven converttoseven = new Converttoseven();
+        Converttoseven converttoseven = new Converttoseven();
 //        System.out.println(converttoseven.convert());
 
 

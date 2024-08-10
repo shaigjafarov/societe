@@ -1,6 +1,14 @@
 package algoritm.leman;
 
+import java.util.Scanner;
+
 public class Solution1 {
+
+    public static void main(String[] args) {
+        Solution1 solution1 = new Solution1();
+        System.out.println(solution1.convertToBase7(new Scanner(System.in).nextInt()));
+    }
+
     public String convertToBase7(int num) {
         if (num == 0) {
             return "0";

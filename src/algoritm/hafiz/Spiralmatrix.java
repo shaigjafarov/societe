@@ -2,13 +2,16 @@ package algoritm.hafiz;
 
 public class Spiralmatrix {
 
+    public static void main(String[] args) {
+        spiralmatrix(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+    }
 
-    public static void spiralmatrix(int m, int n, int[][] matrix) {
+    public static void spiralmatrix(int[][] matrix) {
 
         int top = 0;
-        int bottom = m - 1;
+        int bottom = matrix.length - 1;
         int left = 0;
-        int right = n - 1;
+        int right = matrix[0].length - 1;
 
         while (top <= bottom && left <= right) {
 
