@@ -21,7 +21,7 @@ public class Main {
         // 2. Orta qiyməti 70 və ya yuxarı olan tələbələrin siyahısını yaradın.
         List<Student> studentsWithHighAverage = students.stream()
                 .filter(student -> student.getAverageGrade() >= 70)
-                .collect(Collectors.toList());
+                .toList();
 
         // 3. Bu tələbələrin adlarını və orta qiymətlərini çap edin.
         System.out.println("Orta qiyməti 70 və ya yuxarı olan tələbələr:");

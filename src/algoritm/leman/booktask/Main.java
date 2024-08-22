@@ -15,6 +15,13 @@ public class Main {
         int totalPageCount = books.stream()
                 .mapToInt(Book::getPageCount)
                 .sum();
+
+
+        Integer reduce = books.stream()
+                .map(Book::getPageCount)
+                .reduce(Integer::sum).get();
+
+        System.out.println(reduce);
         System.out.println("Səhifələrin ümumi sayı: " + totalPageCount);
 
         // 2. 200 səhifədən çox olan kitabları filter edin.
