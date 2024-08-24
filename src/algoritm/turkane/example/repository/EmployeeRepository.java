@@ -27,7 +27,7 @@ public class EmployeeRepository {
         int id= scanner.nextInt();
         Connection connection = Connections.getConnection();
 //        CallableStatement callableStatement= connection.prepareCall("select * from get_employee_by_idf(?)");
-        PreparedStatement preparedStatement= connection.prepareStatement("select  get_employee_by_idf(?)");
+        PreparedStatement preparedStatement= connection.prepareStatement("select * from get_employee_by_idf(?)");
         preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
         Employee employee=new Employee();
